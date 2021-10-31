@@ -1,2 +1,18 @@
+v1.2021.300.300 (27 Oct 2021)
+-FIXED: Chromium based Bubbles not loading existing extensions.
+-FIXED: Anti-exploit protection impacting non-Bubbled browsers.
+
+v1.2021.291.1615 (26 Oct 2021) [Installer Update]
+-FIXED: Uninstaller was not fully removing driver reference which caused popup error when re-installed.
+
+v1.2021.291.1615 (18 Oct 2021)
+-FIXED: Saved Bubbles not restoring properly.
+-FIXED: Launching browser from application not loading properly.
+-FIXED: Black color border still drawn if option is turned off.
+-FIXED: New actions not added to action list.
+-FIXED: Assigned actions not displayed when modifying Bubble.
+-UPDATED: Enhanced anti-exploitation protection.
+-UPDATED: Color borders now work with new browser windows.
+
 v1.2021.250.2358 (7 Sep 2021)
 -Initial release
