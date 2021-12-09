@@ -139,7 +139,8 @@ def parse_response(res):
 						if act == BB_SERVER_ACTION_DNS:
 							if suba == BB_SERVER_DNS_SUB_ACTION_LIST:
 								#DNS_SERVER
-								#	ID: (long)
+								#	ServerID: (long)
+								#	ProviderID: (long)
 								#	Provider: (str)
 								#	Country: (str)
 								#	DNSType: (int)
@@ -147,7 +148,8 @@ def parse_response(res):
 								#	Port: (int)
 								dl = json.loads(sr['ReturnValue'])
 								for dp in dl:
-									print("\t" + str(dp['ID']) + ": " + dp['Address'])
+									print("\t" + str(dp['ServerID']) + ": " + dp['Address'])
+									print("\t\tProviderID: " + str(dp['tProviderID']))
 									print("\t\tProvider: " + dp['Provider'])
 									print("\t\tCountry: " + dp['Country'])
 									if dp['DNSType'] == BB_DNS_TYPE_DNS_OVER_TLS:
@@ -207,14 +209,18 @@ if __name__ == '__main__':
 
 		#Now create a new DNS server entry
 		#DNS_SERVER
-		#	ID: (long)
+		#	ServerID: (long)
+		#	ProviderID: (long)
 		#	Provider: (str)
 		#	Country: (str)
 		#	DNSType: (int)
 		#	Address: (str)
 		#	Port: (int)
 		svr = {}
-		svr['ID'] = 0
+		svr['ServerID'] = 0
+		#Either the ProviderID or Provider name 
+		#field must be valid.
+		svr['ProviderID'] = 0
 		svr['Provider'] = "CyDec Security"
 		svr['Country'] = "US"
 		svr['DNSType'] = BB_DNS_TYPE_DNS_OVER_HTTPS
