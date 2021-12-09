@@ -163,13 +163,14 @@ type BUBBLE_UPDATE struct {
 	SpoofSettings map[int]string
 }
 
-type DNS struct {
-	ID       int64
-	Provider string
-	Country  string
-	DNSType  int
-	Address  string
-	Port     int
+type DNS_SERVER struct {
+	ProviderID int64
+	Provider   string
+	ServerID   int64
+	Country    string
+	DNSType    int
+	Address    string
+	Port       int
 }
 
 type DNS_OP struct {
