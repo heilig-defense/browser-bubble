@@ -149,7 +149,7 @@ def parse_response(res):
 								dl = json.loads(sr['ReturnValue'])
 								for dp in dl:
 									print("\t" + str(dp['ServerID']) + ": " + dp['Address'])
-									print("\t\tProviderID: " + str(dp['tProviderID']))
+									print("\t\tProviderID: " + str(dp['ProviderID']))
 									print("\t\tProvider: " + dp['Provider'])
 									print("\t\tCountry: " + dp['Country'])
 									if dp['DNSType'] == BB_DNS_TYPE_DNS_OVER_TLS:
