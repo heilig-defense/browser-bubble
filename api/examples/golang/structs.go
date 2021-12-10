@@ -91,6 +91,8 @@ type BUBBLE_LAUNCH struct {
 }
 
 type BUBBLE_QUERY struct {
+	InstanceID    int64
+	Name          string
 	BrowserID     int64
 	BrowserPID    int
 	DNSID         int64
