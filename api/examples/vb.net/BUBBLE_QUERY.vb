@@ -1,5 +1,7 @@
 <Serializable()>
 Public Class BUBBLE_QUERY
+    Public InstanceID As Long = 0
+    Public Name As String = String.Empty
     Public BrowserID As Long = 0
     Public BrowserPID As Integer = 0
     Public DNSID As Long = 0
