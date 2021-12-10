@@ -4,6 +4,8 @@ using System.Collections.Generic;
 [Serializable()]
 public partial class BUBBLE_QUERY
 {
+    public long InstanceID = 0L;
+    public string Name = string.Empty;
     public long BrowserID = 0L;
     public int BrowserPID = 0;
     public long DNSID = 0L;
