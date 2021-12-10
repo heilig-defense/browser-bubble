@@ -67,6 +67,7 @@ type BUBBLE_DELETE struct {
 }
 
 type BUBBLE_FAIL struct {
+	InstanceID  int64
 	ProcessId   int
 	BrowserPath string
 	ErrorCode   int
