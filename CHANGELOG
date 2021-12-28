@@ -1,3 +1,11 @@
+v1.2021.362.1737 (28 Dec 2021)
+-ADDED: CPU architecture spoofing.
+-ADDED: Firefox version user-agent spoofing.
+-ADDED: New command line options.
+-ADDED: Clean-slate Bubble launch.
+-FIXED: Various issues with sandbox saving and cleanup.
+-FIXED: Profile id not properly read in some instances when launching Bubble from UI or shortcut.
+
 v1.2021.315.2050 (11 Nov 2021)
 -NOTICE: Browser Bubble Pro will be available shortly.  BBPRO will have an exposed WebSocket for API control, headless mode and the ability to run on Windows Server or remote desktops.
 -ADDED: Built-in support for Epic browser.
