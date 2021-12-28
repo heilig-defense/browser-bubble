@@ -3,5 +3,4 @@ Please report bugs relating to the Browser Bubble application.  This will help u
 
 Learn more about Browser Bubble.
 
-https://www.cydecsecurity.com/bubble.html<br>
-https://www.antifp.com/
+https://www.cydecsecurity.com/bubble.html
