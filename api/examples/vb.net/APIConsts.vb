@@ -236,7 +236,7 @@ Public Module APIConsts
 
     Public Const BB_BUBBLE_SPOOF_TIMEZONE As Integer = 1
     Public Const BB_BUBBLE_SPOOF_SCREEN As Integer = 2
-    Public Const BB_BUBBLE_SPOOF_CPU As Integer = 3
+    Public Const BB_BUBBLE_SPOOF_CPU_COUNT As Integer = 3
     Public Const BB_BUBBLE_SPOOF_MEMORY As Integer = 4
     Public Const BB_BUBBLE_SPOOF_TOUCHPOINTS As Integer = 5
     Public Const BB_BUBBLE_SPOOF_FONTS As Integer = 6
@@ -252,7 +252,9 @@ Public Module APIConsts
     Public Const BB_BUBBLE_SPOOF_SPEECH As Integer = 16
     Public Const BB_BUBBLE_SPOOF_BATTERY As Integer = 17
     Public Const BB_BUBBLE_SPOOF_NETWORK As Integer = 18
-
+    Public Const BB_BUBBLE_SPOOF_CPU_ARCH As Integer = 19
+    Public Const BB_BUBBLE_SPOOF_FIREFOX_VERSION As Integer = 20
+    
     Public Const BB_NETWORK_FLAG_ETHERNET As Integer = 1
     Public Const BB_NETWORK_FLAG_WIFI As Integer = 2
 
@@ -268,9 +270,16 @@ Public Module APIConsts
     Public Const BB_BUBBLE_FLAG_DNS_BLOCK As Integer = 512
     Public Const BB_BUBBLE_FLAG_PROXY_SET As Integer = 1024
     Public Const BB_BUBBLE_FLAG_VPN_SET As Integer = 2048
+    Public Const BB_BUBBLE_FLAG_CLEAN_SLATE As Integer = 4096
 
     Public Const BB_ICON_DIRECTORY_NONE As Integer = 0
     Public Const BB_ICON_DIRECTORY_CURRENT_USER_DESKTOP As Integer = 1
     Public Const BB_ICON_DIRECTORY_ALL_USER_DESKTOP As Integer = 2
     Public Const BB_ICON_DIRECTORY_USER_DEFINED As Integer = 3
+    
+    Public Const BB_CPU_ARCH_NONE As Integer = 0
+    Public Const BB_CPU_ARCH_ARM As Integer = 1
+    Public Const BB_CPU_ARCH_I64 As Integer = 2
+    Public Const BB_CPU_ARCH_X86 As Integer = 3
+    Public Const BB_CPU_ARCH_ARM64 As Integer = 4
 End Module
