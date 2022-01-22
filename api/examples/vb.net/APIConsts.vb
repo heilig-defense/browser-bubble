@@ -166,6 +166,9 @@ Public Module APIConsts
 
     Public Const BB_SPEECH_SEX_FEMALE As Integer = 1
     Public Const BB_SPEECH_SEX_MALE As Integer = 2
+    
+    Public Const BB_GENERATE_COLOR_BORDER As Integer = 1
+    Public Const BB_GENERATE_DEBUG_PORTS As Integer = 2
 
     Public Const BB_BROWSER_FIREFOX As Integer = 1
     Public Const BB_BROWSER_EDGE As Integer = 2
