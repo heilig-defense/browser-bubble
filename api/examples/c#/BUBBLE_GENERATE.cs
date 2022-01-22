@@ -7,4 +7,5 @@ public partial class BUBBLE_GENERATE
     public int Count = 0;
     public int IconLocation = 0;
     public string IconPath = string.Empty;
+    public int Flags = 0;
 }
