@@ -79,6 +79,7 @@ type BUBBLE_GENERATE struct {
 	Count        int
 	IconLocation int
 	IconPath     string
+	Flags        int
 }
 
 type BUBBLE_LAUNCH struct {
@@ -116,9 +117,11 @@ type BUBBLE_READY struct {
 }
 
 type BUBBLE_RUNNING struct {
-	InstanceID int64
-	BubbleID   int64
-	DTG        int64
+	InstanceID    int64
+	BubbleID      int64
+	DebugPort     int
+	DebugEndPoint string
+	DTG           int64
 }
 
 type BUBBLE_SAVED struct {
@@ -164,6 +167,12 @@ type BUBBLE_UPDATE struct {
 	Launch        PROFILE_LAUNCH
 	BorderColor   string
 	SpoofSettings map[int]string
+}
+
+type BUBBLE_DEBUG_PORT struct {
+	InstanceID int64
+	Port       int
+	WsEndPoint string
 }
 
 type DNS_SERVER struct {
