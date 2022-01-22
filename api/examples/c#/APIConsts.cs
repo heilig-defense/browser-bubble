@@ -65,6 +65,7 @@ public static partial class APIConsts
     public const int BB_SERVER_BUBBLE_SUB_ACTION_READY = 12;
     public const int BB_SERVER_BUBBLE_SUB_ACTION_FAILED = 13;
     public const int BB_SERVER_BUBBLE_SUB_ACTION_SHUTDOWN = 14;
+    public const int BB_SERVER_BUBBLE_SUB_ACTION_DEBUG_PORT = 15;
     
     public const int BB_SERVER_ACTION_LAUNCH = 9;
     public const int BB_SERVER_LAUNCH_SUB_ACTION_LIST = 1;
@@ -269,6 +270,7 @@ public static partial class APIConsts
     public const int BB_BUBBLE_FLAG_PROXY_SET = 1024;
     public const int BB_BUBBLE_FLAG_VPN_SET = 2048;
     public const int BB_BUBBLE_FLAG_CLEAN_SLATE = 4096;
+    public const int BB_BUBBLE_FLAG_DEBUG_PORT = 8192;
     
     public const int BB_ICON_DIRECTORY_NONE = 0;
     public const int BB_ICON_DIRECTORY_CURRENT_USER_DESKTOP = 1;
