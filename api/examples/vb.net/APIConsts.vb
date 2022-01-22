@@ -64,7 +64,8 @@ Public Module APIConsts
     Public Const BB_SERVER_BUBBLE_SUB_ACTION_READY As Integer = 12
     Public Const BB_SERVER_BUBBLE_SUB_ACTION_FAILED As Integer = 13
     Public Const BB_SERVER_BUBBLE_SUB_ACTION_SHUTDOWN As Integer = 14
-
+    Public Const BB_SERVER_BUBBLE_SUB_ACTION_DEBUG_PORT As Integer = 15
+    
     Public Const BB_SERVER_ACTION_LAUNCH As Integer = 9
     Public Const BB_SERVER_LAUNCH_SUB_ACTION_LIST As Integer = 1
     Public Const BB_SERVER_LAUNCH_SUB_ACTION_CREATE As Integer = 2
@@ -271,6 +272,7 @@ Public Module APIConsts
     Public Const BB_BUBBLE_FLAG_PROXY_SET As Integer = 1024
     Public Const BB_BUBBLE_FLAG_VPN_SET As Integer = 2048
     Public Const BB_BUBBLE_FLAG_CLEAN_SLATE As Integer = 4096
+    Public Const BB_BUBBLE_FLAG_DEBUG_PORT As Integer = 8192
 
     Public Const BB_ICON_DIRECTORY_NONE As Integer = 0
     Public Const BB_ICON_DIRECTORY_CURRENT_USER_DESKTOP As Integer = 1
