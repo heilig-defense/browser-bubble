@@ -191,6 +191,9 @@ BB_SPEECH_PROFILE = 1
 BB_SPEECH_VOICE = 2
 BB_SPEECH_PROFILE_VOICES = 3
 
+BB_GENERATE_COLOR_BORDER = 1
+BB_GENERATE_DEBUG_PORTS = 2
+
 BB_BROWSER_FIREFOX = 1
 BB_BROWSER_EDGE = 2
 BB_BROWSER_CHROME = 4
@@ -393,6 +396,7 @@ def bubble_generate_new():
 	#	Count: (int)
 	#	IconLocation: (int)
 	#	IconPath: (str)
+	#	Flags: (int)
 
 	try:
 		#Generate two new Bubbles
@@ -403,6 +407,7 @@ def bubble_generate_new():
 		bg['Count'] = 2
 		bg['IconLocation'] = BB_ICON_DIRECTORY_CURRENT_USER_DESKTOP
 		bg['IconPath'] = ""
+		bg['Flags'] = BB_GENERATE_COLOR_BORDER | BB_GENERATE_DEBUG_PORTS
 		wrap_and_queue(BB_SERVER_ACTION_BUBBLE, BB_SERVER_BUBBLE_SUB_ACTION_GENERATE, json.dumps(bg))	
 	except Exception as e:
 		print(e)
@@ -716,6 +721,8 @@ def parse_response(res):
 								#BUBBLE_RUNNING
 								#	InstanceID: (long)
 								#	BubbleID: (long)
+								#	DebugPort: (int)
+								#	DebugEndPoint: (str)
 								#	DTG: (long)
 								bl = json.loads(sr['ReturnValue'])
 								print("\tRUNNING BUBBLES")
@@ -728,6 +735,8 @@ def parse_response(res):
 										if br['BubbleID'] in _bubble_saved_list:
 											print("\t\tName: " + _bubble_saved_list[br['BubbleID']])
 											print("\t\t\tInstance ID: " + str(br['InstanceID']))
+											if br['DebugPort'] > 0:
+												print("\t\t\tDebug Endpoint: " + str(br['DebugPort']) + " - " + br['DebugEndPoint'])
 											print("\t\t\tDTG: " + str(br['DTG']))
 
 							elif suba == BB_SERVER_BUBBLE_SUB_ACTION_DETAILS:
