@@ -121,10 +121,9 @@ public static partial class APIConsts
     public const int BB_LICENSE_STATUS_EXPIRED = 3;
     public const int BB_LICENSE_STATUS_REVOKED = 4;
     
-    public const int BB_LICENSE_ENTITLEMENT_SINGLE_SYSTEM = 1;
+    public const int BB_LICENSE_ENTITLEMENT_PRO = 1;
     public const int BB_LICENSE_ENTITLEMENT_MULTI_SYSTEM = 2;
-    public const int BB_LICENSE_ENTITLEMENT_COUNT_LIMITED = 4;
-    public const int BB_LICENSE_ENTITLEMENT_SERVER_ENABLED = 8;
+    public const int BB_LICENSE_ENTITLEMENT_SERVER_ENABLED = 4;
     
     public const int BB_FONT_OP_PROFILE = 1;
     public const int BB_FONT_OP_FONT_ITEM = 2;
