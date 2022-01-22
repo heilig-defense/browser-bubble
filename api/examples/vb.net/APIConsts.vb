@@ -120,10 +120,9 @@ Public Module APIConsts
     Public Const BB_LICENSE_STATUS_EXPIRED As Integer = 3
     Public Const BB_LICENSE_STATUS_REVOKED As Integer = 4
 
-    Public Const BB_LICENSE_ENTITLEMENT_SINGLE_SYSTEM As Integer = 1
+    Public Const BB_LICENSE_ENTITLEMENT_PRO As Integer = 1
     Public Const BB_LICENSE_ENTITLEMENT_MULTI_SYSTEM As Integer = 2
-    Public Const BB_LICENSE_ENTITLEMENT_COUNT_LIMITED As Integer = 4
-    Public Const BB_LICENSE_ENTITLEMENT_SERVER_ENABLED As Integer = 8
+    Public Const BB_LICENSE_ENTITLEMENT_SERVER_ENABLED As Integer = 4
 
     Public Const BB_FONT_OP_PROFILE As Integer = 1
     Public Const BB_FONT_OP_FONT_ITEM As Integer = 2
