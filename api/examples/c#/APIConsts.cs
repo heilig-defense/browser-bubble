@@ -129,6 +129,9 @@ public static partial class APIConsts
     public const int BB_FONT_OP_PROFILE = 1;
     public const int BB_FONT_OP_FONT_ITEM = 2;
 
+    public const int BB_GENERATE_COLOR_BORDER = 1;
+    public const int BB_GENERATE_DEBUG_PORTS = 2;
+
     // Action is defined to run before the Bubble launches.
     public const int BB_LAUNCH_ACTION_OP_START_PRE = 1;
     // Action is defined to run right after the Bubble launches.
